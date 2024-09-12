@@ -305,11 +305,6 @@ class CDLinkedListTest {
 		setIterators(1, 4, 5, 7);
 		l1.swapRange(itrs[0], itrs[1], itrs[2], itrs[3]);
 		
-		DListIterator t = new DListIterator(l1.header);
-		for (int i = 0; i < 5; i++) {
-			System.out.println(t.currentNode.data);
-			t.next();
-		}
 		
 		storeInArray();
 		assertEquals(5, a[0]);
