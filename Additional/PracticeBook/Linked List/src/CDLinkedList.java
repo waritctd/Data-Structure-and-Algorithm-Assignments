@@ -589,7 +589,7 @@ public class CDLinkedList {
         // Handle the case where the chunk is moved to a new position
         if (p.currentNode == end.currentNode.nextNode) {
             // Chunk is moved right after itself
-            // Re-adjust end and p
+            // Re-adjust end and p 
             end.currentNode.nextNode = p.currentNode;
             p.currentNode.previousNode.nextNode = start.currentNode;
             start.currentNode.previousNode = p.currentNode.previousNode;
